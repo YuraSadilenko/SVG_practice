@@ -1,0 +1,12 @@
+.box {
+
+  &__axe {
+    width: 300px;
+    animation: rotate 3s infinite linear;
+  }
+}
+
+.axe {
+  animation: rotate 1s infinite linear;
+
+}

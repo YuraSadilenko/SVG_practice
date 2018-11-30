@@ -1,0 +1,10 @@
+.loader {
+
+    &__load {
+        stroke-dasharray: 170;
+        stroke-linecap: round;
+        animation: load 10s infinite linear;
+    }
+    
+}
+
