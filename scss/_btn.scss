@@ -1,0 +1,60 @@
+.btn {
+  &__area {
+    display: block;
+    margin: auto;    
+    height: 30rem;
+    background-color: $btn-bg-light;    
+
+    &--dark {
+      background-color: $btn-bg-dark;
+    }
+  }
+
+  &__button {
+    &:hover .btn__rect-hover{
+      cursor: pointer;
+      width: 100%;
+      x: 0;
+    }
+
+    &:hover  .btn__text{
+      fill: #fff;
+      transition: 1s;
+    }
+  }
+
+  &__text {
+    font-size: 2.5rem;  
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    fill: $btn-light;
+    cursor: pointer;
+    transition: 0.5s;    
+
+    &--purple {
+     fill: $btn-dark; 
+   }
+ }
+
+  &__rect {
+    stroke: $btn-light;
+    stroke-width: 10px;
+    fill: transparent;
+    cursor: pointer;
+    z-index: 1;   
+
+    &--purple {
+      stroke: $btn-dark;
+    }
+    &-hover {
+      fill: $btn-light;
+      fill-opacity: 0.5;
+      transition: all 1s;
+
+      &--purple {
+        fill:$btn-dark;
+      }
+    }
+  }
+}

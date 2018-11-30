@@ -1,0 +1,21 @@
+.humburger {  
+  background-color: #000;
+
+  &__line {
+    stroke: #fff;
+
+
+    &--after {
+      stroke-linecap: round;
+      stroke-width: 5rem;
+      stroke: #fff;
+    }
+
+    &--central {
+
+    }
+
+    &--before {
+    }
+  }
+}
