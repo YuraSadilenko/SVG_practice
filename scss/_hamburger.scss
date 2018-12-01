@@ -1,14 +1,53 @@
-.humburger {  
-  background-color: #000;
+.hamburger {  
+  position: relative;
+  transition: all 1s;
 
+  &__input {
+    display: none;
+
+    &:checked ~ .hamburger__menu .hamburger__line--after {
+      transform: rotate(42deg) translate(15%, -25%);
+      transition: 1s;
+    }
+  
+    &:checked ~ .hamburger__menu .hamburger__line--center {
+      stroke: transparent;
+      transition: 1s;
+    }
+  
+    &:checked ~ .hamburger__menu .hamburger__line--before {
+      transform: rotate(-40deg) translate(-40%, -1%);
+      transition: 1s;
+
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__menu {
+    
+
+    &--item {
+      background-color: #000;
+
+    }
+  }
+  
+  
   &__line {
+    stroke-linecap: round;
     stroke: #fff;
+    transition: 1s;
 
 
     &--after {
-      stroke-linecap: round;
-      stroke-width: 5rem;
-      stroke: #fff;
+
     }
 
     &--central {
