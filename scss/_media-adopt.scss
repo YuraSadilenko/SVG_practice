@@ -1,0 +1,56 @@
+.media-adopt {
+  width: auto;
+  height: auto;
+
+  &__svg {
+    @include respond(phone) {
+      width: 250px;
+      height: 150px;
+    }
+    @include respond(tab-port) {
+      width: 400px;
+      height: 200px;
+    }
+    @include respond(tab-land) {
+      width: 500px;
+      height: 250px;
+    }
+    @include respond(large-desktop) {
+      width: 600px;
+      height: 300px;
+    }
+    @include respond(huge-desktop) {
+      width: 800px;
+      height: 400px;
+    }
+    &--item {
+
+      @include respond(phone) {
+        fill:pink;
+        width: 250px;
+        height: 150px;
+      }
+      @include respond(tab-port) {
+        fill:blue;
+        width: 400px;
+        height: 200px;
+      }
+      @include respond(tab-land) {
+        fill:green;
+        width: 500px;
+        height: 250px;
+      }
+      @include respond(large-desktop) {
+        fill:purple;
+        width: 600px;
+        height: 300px;
+      }
+      @include respond(huge-desktop) {
+        fill:orangered;
+        width: 800px;
+        height: 400px;
+      }
+    }
+  }
+}
+

@@ -11,12 +11,13 @@
     }
   
     &:checked ~ .hamburger__menu .hamburger__line--center {
+      // transform: rotate(-20deg) translate(-15%, 15%);
       stroke: transparent;
-      transition: 1s;
+      transition: .2s;
     }
   
     &:checked ~ .hamburger__menu .hamburger__line--before {
-      transform: rotate(-40deg) translate(-40%, -1%);
+      transform: rotate(-41deg) translate(-42%, -2%);
       transition: 1s;
 
     }
