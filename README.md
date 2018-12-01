@@ -1,2 +1,4 @@
 # SVG_practice
-svg work
+svg practice!
+
+link to GHPage is [here](https://yurasadilenko.github.io/SVG_practice/)
