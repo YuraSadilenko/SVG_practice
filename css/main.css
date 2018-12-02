@@ -24,7 +24,7 @@ body {
 
 @keyframes load {
   100% {
-    stroke-dashoffset: 7000; } }
+    stroke-dashoffset: 942; } }
 
 .box__axe {
   width: 300px;
@@ -153,6 +153,6 @@ body {
     transition: 1s; }
 
 .loader__load {
-  stroke-dasharray: 170;
+  stroke-dasharray: 235;
   stroke-linecap: round;
-  animation: load 10s infinite linear; }
+  animation: load 1s infinite linear; }
